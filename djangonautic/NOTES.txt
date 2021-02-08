@@ -1,0 +1,33 @@
+DATABASE NOTES:
+opening an interactive shell to work with a database - in terminal type 'python manage.py shell' then 'from articles.models import Article' which means - 'from folder.file import ClassName'
+
+How do we use this?
+'Article.objects.all' - will retrieve all - however nothing exists in it yet so it returns an empty list
+
+Lets add something to it:
+'article = Article()' and then we can dive into the model (article.title = x, article.slug = y, article.body = z....etc)
+
+How do we then save this to the database?
+'article.save()'
+
+Then go back to line 5 above and try to retrieve:
+'Article.objects.all()'
+
+How about grabbing a specific element from the database?
+'Article.objects.all()[0].title' - this grabs all then the item at the 0 index and then just the title element
+
+When returning the Article.object.all() it does not come back with easy readability, to change this check articles=>models.py=> line:12-13
+What this does is returns the title when typing Article.objects.all()
+
+
+DJANGO ADMIN NOTES:
+if you go to localhost:8000/admin/ - then it allows you to login but we need to create those logins first
+'python manage.py createsuperuser' add username and pass ('ben', 'test1234' for this example)
+
+Next we want our articles database to appear in the admin area so we navigate to admin.py within the articles folder(see that file for further instruction)
+
+IMAGES:
+normally we would not let django serve up our static files - normally AWS
+
+
+x

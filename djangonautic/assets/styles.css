@@ -29,8 +29,20 @@ a, a:hover, a:visited {
 
 div.wrapper h1 {
   text-align: center;
-  margin: 100px auto;
+  margin: 100px auto 0px auto;
   font-size: 2.4em;
+}
+
+div.wrapper h2 {
+  text-align: center;
+  margin: 20px auto 50px auto;
+  font-size: 1.2em;
+}
+
+div.wrapper h2 a{
+  text-align: center;
+  margin: 20px auto 50px auto;
+  font-size: 1.6em;
 }
 
 header{
@@ -88,7 +100,10 @@ nav button{
 }
 
 .article-detail .article img{
-  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 .article-detail .article h2{
